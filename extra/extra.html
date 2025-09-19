@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="extra.css">
+    <title>Document</title>
+</head>
+    <body>
+
+        <div id="box">
+            <div id="box-navbar">
+                <nav>
+                    <div id="resp-align">
+                    <div id="title-navbar">
+                        <h1 id="titulo-site">Mindplay</h1>
+                    </div>  
+                    
+                    </div>
+                    <ul id="menu-list">
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="../adol/adol.html">Adolescência</a></li>
+                        <li><a href="../mundo-dos-jogos/mdj.html">Mundo dos Jogos</a></li>
+                        <li><a href="../impacto-dos-jogos/impac.html">Impacto dos Jogos</a></li>
+                        <li><a href="../beneficio-dos-jogos/benef.html">Benefício dos Jogos</a></li>
+                        <li><a href="extra.html">Conheça Sobre</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div id="box-group-limit">
+                <div id="box-group-one">
+                    <div id="group-one">
+                        <div id="news">
+                            <div id="iframe">
+                                <iframe title="R7 Video Player" src="https://www.youtube.com/embed/82HGrQ4SkQQ?controls=1&amp;rel=0&amp;playsinline=0&amp;cc_load_policy=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fvideosaude.icict.fiocruz.br&amp;widgetid=3&amp;forigin=https%3A%2F%2Fvideosaude.icict.fiocruz.br%2Ffilmes%2Fjogos-de-realidade-virtual-no-atendimento-de-jovens-e-adolescentes-no-caps-brasil-aqui-tem-sus-osasco-sp%2F%3Futm_source%3Dchatgpt.com&amp;aoriginsup=1&amp;gporigin=https%3A%2F%2Fchatgpt.com%2F&amp;vf=6" width="640" height="360" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+                            </div>
+                            <div id="iframe-link">
+                                <div id="icon">
+                                    <a href="https://www.youtube.com/@canalCONASEMS" target="_blank" class="link-channel">
+                                        <img src="https://yt3.googleusercontent.com/ytc/AIdro_knDlvsALJK_UjQcdJCChYJ7yaNcPVpmrRZjkKNCJ0KgdM=s160-c-k-c0x00ffffff-no-rj" alt="icon" width="100%" id="icon-img">
+                                    </a>
+                                </div>
+                                <div id="group-channel">
+                                        <div id="icon-name">
+                                            <a href="https://www.youtube.com/@canalCONASEMS " target="_blank"><h1>CONASEMS</h1></a>
+                                        </div>
+                                        <div id="name-channel">
+                                            <a href="https://www.youtube.com/@canalCONASEMS" target="_blank" id="link-channel"><p>@canalCONASEMS</p></a>
+                                            <p id="inscritos"></p><p id="videos"></p></a>
+                                        </div>
+                                        <div id="desc-channel">
+                                            <p id="color-gray">Canal oficial do Conselho Nacional de Secretarias Municipais de Saúde - Conasems</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="text-news">
+                            <div id="title-text">
+                                <h1>Jogos de realidade virtual no atendimento de adolescentes no Caps </h1>
+                            </div>
+                            <div id="text">
+                                <p>
+                                    Em Osasco-SP, o CAPS Infantil está inovando no cuidado com crianças e adolescentes: agora, os jogos de realidade virtual fazem parte das sessões terapêuticas!
+                                </p>
+                                <p>
+                                    Essa abordagem tecnológica ajuda a ressignificar os atendimentos, tornando-os mais dinâmicos e ampliando as oportunidades de interação  social para jovens com transtornos mentais graves.
+                                </p>
+                            </div>
+                            <div id="btn-news">
+                                <a href="https://www.youtube.com/watch?v=82HGrQ4SkQQ&t=84s" target="_blank">
+                                    <button>Saiba Mais</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+        fetch('dados.php')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('inscritos').innerText = "• " + data.inscritos + " mil inscritos";
+                document.getElementById('videos').innerText = "• " + data.videos + " mil videos";
+            })
+            .catch(err => {
+                console.error('Erro ao carregar dados:', err);
+                document.getElementById('inscritos').innerText = "Erro ao carregar inscritos";
+                document.getElementById('videos').innerText = "Erro ao carregar vídeos";
+            });
+</script>
+        
+    </body>
+</html>
