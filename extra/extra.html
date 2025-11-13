@@ -28,7 +28,7 @@
 
                 </nav>
             </div>
-            <div id="box-group-limit">
+            <div class="box-group-limit">
                 <div id="box-group-one">
                     <div id="group-one">
                         <div id="news">
@@ -57,10 +57,10 @@
                             </div>
                         </div>
                         <div id="text-news">
-                            <div id="title-text">
+                            <div class="title-text">
                                 <h1>Jogos de realidade virtual no atendimento de adolescentes no Caps </h1>
                             </div>
-                            <div id="text">
+                            <div class="text">
                                 <p>
                                     Em Osasco-SP, o CAPS Infantil está inovando no cuidado com crianças e adolescentes: agora, os jogos de realidade virtual fazem parte das sessões terapêuticas!
                                 </p>
@@ -76,23 +76,91 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
+            <div class="box-group-limit">
+                <div id="box-group-two">
+                    <div id="group-two">
+                        <div id="text-news-two">
+                            <div class="title-text color">
+                                <h1>Vício em videogames e jogos eletrônicos começa a ter tratamento no Brasil</h1>
+                            </div>
+                            <div class="text color">
+                                <p>
+                                    O vício em videogames, reconhecido pela Organização Mundial da Saúde, está ganhando atenção no Brasil. Iniciativas como o grupo "Adictos em Jogos Eletrônicos Anônimos" (GAA    ) oferecem apoio terapêutico por meio de reuniões online, onde participantes compartilham experiências e estratégias para controlar o impulso pelo jogo. Além disso, foi criado um núcleo específico para familiares, visando fortalecer o suporte às pessoas afetadas.
+                                </p>
+                            </div>
+                            <div id="btn-news" class="color">
+                                <a href="https://oglobo.globo.com/saude/bem-estar/vicio-em-videogames-jogos-eletronicos-comeca-ter-tratamento-no-brasil-veja-como-e-25238344" target="_blank">
+                                    <button id="btn-news-two">Saiba Mais</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="img-news-two">
+                            <div>
+                                <img src="img/header-jogos.jpg" alt="andi.org">
+                            </div>
+                            <div>
+                                <img src="img/globo.png" alt="globo" id="globo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-group-limit">
+                <div id="box-group-three">
+                    <div id="group-three">
+                        <div id="box-three">
+                            <div id="title-trailer">
+                                <img src="https://occ-0-4452-116.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABXe64r2pD2C915bE8kULeQXa9KY36LQbFlkNvWBAViQAXAtXWEPaB7Oyqo8g2yQQHNO9XJ5cca0WXGq-tPXg7sYBQweFk0tITLV8r-btY3wmqYRK4Dd_CK7a420ACzFk03kQ0RHJOtrnsxv-JVjRVPnFZ309R6eRmUbuLxFuEkm0JgYcu7rw8g.png?r=391" alt="">
+
+                                <a href="https://www.netflix.com/br/title/81019087" target="_blank">
+                                    <button id="gdlk-btn">Acessar </button>
+                                </a>
+                            </div>
+                            <div id="text-overlaid">
+                                <div id="group-text">
+                                    <div>
+                                        <h1>GDLK</h1>
+                                    </div>
+                                    <div id="bold">
+                                        <p>
+                                            2020
+                                            <span>•</span>
+                                            Minissérie
+                                            <span>•</span>
+                                            A16
+                                            <span>•</span>
+                                            Documentário
+                                        </p>
+                                    </div>
+                                    <div id="size">
+                                        <p>
+                                            A minissérie GDLK (Netflix, 2020) mostra a evolução dos videogames e como eles se tornaram fenômeno cultural, evidenciando a influência dos jogos na identidade e socialização dos adolescentes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
 
         <script>
-        fetch('dados.php')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('inscritos').innerText = "• " + data.inscritos + " mil inscritos";
-                document.getElementById('videos').innerText = "• " + data.videos + " mil videos";
-            })
-            .catch(err => {
-                console.error('Erro ao carregar dados:', err);
-                document.getElementById('inscritos').innerText = "Erro ao carregar inscritos";
-                document.getElementById('videos').innerText = "Erro ao carregar vídeos";
-            });
-</script>
+            fetch('dados.php')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('inscritos').innerText = "• " + data.inscritos + " mil inscritos";
+                    document.getElementById('videos').innerText = "• " + data.videos + " mil vídeos";
+                })
+                .catch(err => {
+                    document.getElementById('inscritos').innerText = "Erro ao carregar inscritos";
+                    document.getElementById('videos').innerText = "Erro ao carregar vídeos";
+                });
+        </script>
         
     </body>
 </html>

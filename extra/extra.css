@@ -91,7 +91,7 @@ a:active{
     color: black;
 }
 
-#box-group-limit{
+.box-group-limit{
     position: static;
     z-index: 0;
     width: 100vw;
@@ -119,19 +119,6 @@ a:active{
     align-items: center;
 }
 
-#text-one{
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: rgb(152, 54, 202);
-}
-
 #news{
     width: auto;
     height: 65%;
@@ -148,7 +135,6 @@ iframe{
 
 #text-news{
     width: 40%;
-    transform: scale(1.2);
 }
 
 #iframe-link{
@@ -231,15 +217,19 @@ iframe{
     border-radius: 15px;
 }
 
-#title-text{
-    font-size: 16px;
+#text-news-two{
+    width: 40%;
+}
+
+.title-text{
+    font-size: 18px;
     margin: 15px;
     margin-top: 25px;
     color: white;
     margin-bottom: 25px;
 }
 
-#text{
+.text{
     margin-top: 25px;
     margin-right: 25px;
     margin-left: 25px;
@@ -247,10 +237,16 @@ iframe{
     font-size: 22px;
 }
 
-#text p{
+.text p{
     text-indent: 30px;
     color: white;
     font-weight: bold;
+}
+
+.color h1,
+.color p,
+.color button{
+    color: black;
 }
 
 #btn-news{
@@ -258,6 +254,18 @@ iframe{
     width: 100%;
     display: grid;
     justify-content: center;
+}
+
+#btn-news-two{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#btn-news-two:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 button{
@@ -273,8 +281,158 @@ button{
 button:hover{
     transform: scale(1.1);
     transition: 0.2s;
-    background-color: rgb(191, 62, 255);
+    background-color: white;
+    color: black;
     cursor: pointer;
+}
+
+#box-group-two{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+#group-two{
+    position: relative;
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-news-two{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e4c9a;
+    border-top: 10px solid #1e4c9a;
+    border-left: 10px solid #1e4c9a;
+    border-right: 10px solid #1e4c9a;
+    border-radius: 15px;
+}
+
+#globo{
+    width: 150px;
+    padding: 10px;
+}
+
+#text-news-two{
+    height: 70%;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 0px 10px 5px rgb(228, 228, 228);
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.color-text{
+    color: black;
+}
+
+#box-group-three{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(119, 119, 119);
+    z-index: 0;
+    overflow: hidden;
+}
+
+#group-three{
+    position: relative;
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-three{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    position: relative;
+
+    background-image: url(img/gdlk-net.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#text-overlaid{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    bottom: 0px;
+}
+
+#group-text{
+    margin-top: 15px;
+    margin-left: 30px;
+    color: white;
+}
+
+#group-text div{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#group-text div p{
+    font-size: 20px;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+#title-trailer{
+    width: 500px;
+    position: absolute;
+    bottom: 230px;
+    left: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#gdlk-btn{
+    margin-top: 2%;
+    margin-left: 7%;
+    font-size: 15px;
+    padding: 10px 10px;
+    background-color: rgb(200, 0, 0);
+    border-radius: 50px;
+}
+
+#title-trailer a button:hover{
+    color: white;
+    transform: scale(1);
+    background-color: rgb(135, 0, 0);
+}
+
+span{
+    color: darkgray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#size{
+    width: 65%;
 }
 
 .subtitle{

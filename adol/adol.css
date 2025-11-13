@@ -118,6 +118,7 @@ a:active{
     justify-content: center;
 
     background-image: url(img/back-adol.png);
+    background-position: 50% 100%;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
